@@ -9,8 +9,8 @@
   <body>
     <main class="audio-player-container">
       <!-- Card player -->
-      <div class="thumb">
-        <img src="src/images/Solar.png" alt="" class="thumnail" />
+      <div class="thumbnail-container">
+        <img src="src/images/Solar.png" alt="album thumbnail" class="thumbnail" />
       </div>
       <div class="music-info">
         <div class="top-information">
@@ -20,14 +20,14 @@
           </div>
           <p class="current-index"><span>1</span>/4</p>
         </div>
-      </div>
+      
 
       <!-- Audio player -->
       <audio src="src/music/Solar.mp3"></audio>
       <div class="progress-container">
-        <div class="progress">
+        <div class="progress-bar">
           <span class="time-indicator current-time">0:00</span>
-          <span class="duration-time">0:00</span>
+          <span class="time-indicator duration-time">0:00</span>
         </div>
       </div>
 
@@ -97,6 +97,7 @@
           <img src="src/icons/next-icon.svg" alt="next icon">
         </button>
       </nav>
+    </div>
     </main>
 
     <script src="script.js"></script>

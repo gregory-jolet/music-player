@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music player</title>
+  </head>
+  <body>
+    <main class="audio-player-container">
+
+        <!-- Card player -->
+      <div class="thumb">
+        <img src="src/images/Solar.png" alt="" class="thumnail">
+      </div>
+      <div class="music-info">
+        <div class="top-information">
+            <div class="top-left-content">
+                <h1 class="music-title">Solar</h1>
+                <p class="artist-name">Bertical</p>
+            </div>
+            <p class="current-index">
+                <span>1</span>/4
+            </p>
+        </div>
+      </div>
+
+      <!-- Audio player -->
+      <audio src="src/music/Solar.mp3"></audio>
+      <div class="progress-container">
+        <div class="progress">
+            <span class="time-indicator current-time">0:00</span>
+            <span class="duration-time">0:00</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navigation">
+        <button class="shuffle">
+            
+        </button>
+      </nav>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

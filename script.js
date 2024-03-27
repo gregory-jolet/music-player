@@ -17,8 +17,8 @@ let currentMusicIndex = 1;
 function populateUI({ title, artist }) {
   musicTitle.textContent = title;
   artistName.textContent = artist;
-  thumbnail.src = `/src/images/${title}.png`;
-  musicPlayer.src = `/src/music/${title}.mp3`;
+  thumbnail.src = `/src/assets/image/${title}.png`;
+  musicPlayer.src = `/src/assets/music/${title}.mp3`;
   indexTxt.textContent = `${currentMusicIndex}/${musicData.length}`;
 }
 
@@ -34,12 +34,12 @@ function handlePlayPause() {
 }
 
 function play() {
-  playBtn.querySelector("img").src = "./src/icons/pause-icon.svg";
+  playBtn.querySelector("img").src = "./src/assets/icon/pause-icon.svg";
   musicPlayer.play();
 }
 
 function pause() {
-  playBtn.querySelector("img").src = "./src/icons/play-icon.svg";
+  playBtn.querySelector("img").src = "./src/assets/icon/play-icon.svg";
   musicPlayer.pause();
 }
 
